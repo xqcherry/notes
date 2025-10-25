@@ -85,3 +85,30 @@ git revert <commit> // 撤销指定的提交
 |   [git pull](https://www.runoob.com/git/git-pull.html)   | 下载远程代码并合并 |
 |   [git push](https://www.runoob.com/git/git-push.html)   | 上传远程代码并合并 |
 
+## 实例
+
+分支重命名
+
+```
+# 1. 重命名本地分支
+git branch -m old-name new-name
+
+# 2. 推送新分支到远程
+git push -u origin new-name
+
+# 3. 删除远程旧分支
+git push origin --delete old-name
+```
+
+删除远程分支
+
+```
+git push origin --delete <远程分支名>
+```
+
+与远程仓库关联
+
+```
+git remote add origin <你的远程仓库URL>
+```
+
