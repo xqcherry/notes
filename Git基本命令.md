@@ -112,3 +112,14 @@ git push origin --delete <远程分支名>
 git remote add origin <你的远程仓库URL>
 ```
 
+
+
+从新建文件夹开始拉项目
+
+```
+git init
+git remote add origin <url>
+git pull origin main  # main取决于远程仓库的分支名
+
+```
+
